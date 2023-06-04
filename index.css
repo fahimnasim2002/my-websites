@@ -1,0 +1,284 @@
+h1 , h2, h3, h4{
+    color: #01192c; 
+}
+
+head{
+
+    /* background-color: #B5C9D4; */
+}
+
+body{
+    background-color: silver;
+}
+
+nav {
+    background-color: #B5C9D4;
+    /* background-color: #679289; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav a {
+    color: rgb(47, 52, 118);
+    margin: 0% 12px;
+    text-decoration: navy;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #000000;
+    transform: scale(1.2);
+}
+
+#login-page {
+    background-color: lightgrey;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 50%;
+    left: 25%;
+    width: 50%;
+    height: 70%;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+    gap: 10px;
+    animation-name: loginToptoDown;
+    animation-duration: 2s;
+    top: 5px;
+    margin-top: 90px;
+    padding: 50px;
+}
+
+.login {
+    font-size: 1.7rem;
+    /* margin: 20px 0 10px 0; */
+}
+
+input {
+    width: 85%;
+    height: 9%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding-left: 15px;
+    font-weight: 650;
+    color: rgba(0, 0, 0, 0.5);
+    outline-style: none;
+    margin-top: 10px;
+}
+
+.login-btn {
+    width: 80%;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #679289;
+    font-size: large;
+    font-weight: bold;
+}
+
+.login-btn:active {
+    background-color: #999299;
+}
+
+.feature-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+}
+
+.feature-card-wrapper div img{
+    /* width: 20%; */
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.feature-card {
+    margin: 12px;
+    padding: 12px;
+    height: 375px;
+    width: 400px;
+    
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.feature-product h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+
+#centered-paragraph {
+    text-align: center;
+}
+
+.feature-card h3 {
+    color: #679289;
+}
+
+.feature-card p {
+    text-align: justify;
+
+}
+
+.feature-card button {
+    /* width: 4%;
+    height: 2%; */
+    outline: none;
+    border: none;
+    background-color: #679289;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.feature-card button:hover{
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.feature-card:hover {
+    /* background-color: #d8d8d8; */
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.ourproducts{
+    margin: 6px;
+    text-align: center;
+}
+
+.ourproducts h2{
+    color: #000000;
+}
+
+.our-products-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.our-products-wrapper div img{
+    width: 60% ;
+    /* min-width: 150px;
+    max-width: 400px; */
+}
+
+.our-product-card{
+    margin: 20px;
+    padding: 20px;
+    height: 400px;
+    width: 375px;
+    border-radius: 6px;
+    border: 2px solid wheat;
+    background-color: grey;
+    transition: all 0.5s;
+}
+
+.our-product-card p{
+    text-align: center;
+}
+
+.our-product-card h3{
+    color:#164339;
+}
+
+.our-product-card button{
+    outline: none;
+    border: none;
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.our-product-card button:hover{
+    background-color: brown;
+    transform: scale(1.1);
+}
+
+.our-product-card:hover{
+    /* background-color: #dcdcdc; */
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#message {
+    background-color: #679289;
+    color: white;
+    font-weight: bold;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    padding: 1em;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.message:active {
+    transform: scale(1.1);
+}
+
+footer{
+    height:100px;
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+footer .content{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.copywright{
+    background-color: black;
+    color:whitesmoke;
+    width:100%;
+    text-align: center;
+}
+
+.more{
+    display:none;
+}
+
+@keyframes loginToptoDown {
+    from {
+        top:-200px;
+    }
+    to {
+        top:5px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+}
